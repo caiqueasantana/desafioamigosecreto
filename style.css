@@ -4,11 +4,11 @@
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
     --color-button-hover: #e55720;
-    --color-text: #444444;
+    --color-text: #333;
     --color-white: #FFFFFF;
 }
 
-/* Estilos gerais */
+/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -43,8 +43,8 @@ body {
 .input-section {
     flex: 60%;
     background-color: var(--color-secondary);
-    border: 1px solid #000;
-    border-radius: 64px 64px 0 0;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,106 +57,71 @@ body {
     font-size: 48px;
     font-family: "Merriweather", serif;
     font-weight: 900;
-    font-style: italic;
     color: var(--color-white);
 }
 
 .section-title {
-    font-family: "Inter", serif;
-    font-size: 36px;
-    font-weight: 700;
+    font-family: "Inter", sans-serif;
+    font-size: 28px;
+    font-weight: bold;
     color: var(--color-primary);
-    margin: 10px 0;
-    text-align: center;
+    margin-bottom: 15px;
 }
 
-/* Contêineres de entrada e botão */
+/* Contêineres de entrada */
 .input-wrapper {
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
     margin-top: 20px;
 }
 
 .input-name {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #000;
-    border-radius: 25px 0 0 25px;
-    font-size: 16px;
-}
-
-.button-container {
-    width: 300px;
-    justify-content: center;
-}
-
-/* Estilos de entrada de texto */
-.input-title {
     flex: 1;
-    padding: 10px 15px;
-    font-size: 16px;
-    border: 2px solid #333;
-    border-right: none;
+    padding: 12px;
+    border: 2px solid var(--color-tertiary);
     border-radius: 25px 0 0 25px;
-    font-family: "Merriweather", serif;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
 }
 
-/* Estilos de botão */
+/* Botões */
 button {
-    padding: 15px 30px;
-    font-family: "Inter", sans-serif;
+    padding: 12px 25px;
     font-size: 16px;
-    border: 2px solid #000;
+    border: none;
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
-    color: var(--color-text);
+    background-color: var(--color-button);
+    color: var(--color-white);
     border-radius: 0 25px 25px 0;
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: var(--color-button-hover);
+}
+
+.button-draw {
+    margin-top: 20px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.button-draw:hover {
+    background-color: #3b50d1;
 }
 
 /* Listas */
 ul {
     list-style-type: none;
-    color: var(--color-text);
-    font-family: "Inter", sans-serif;
     font-size: 18px;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .result-list {
-    margin-top: 15px;
-    color: #05DF05;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* Botão de sortear título */
-.button-draw {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 10px 40px;
-    color: var(--color-white);
-    background-color: var(--color-button);
-    font-size: 16px;
-}
-
-.button-draw img {
-    margin-right: 40px;
-}
-
-.button-draw:hover {
-    background-color: var(--color-button-hover);
-}
+ 
