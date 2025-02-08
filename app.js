@@ -2,7 +2,7 @@ let amigos = [];  // Lista de amigos
 
 // Função para adicionar um amigo à lista
 function adicionarAmigo() {
-    const input = document.getElementById("nomeAmigo");
+    const input = document.getElementById("amigo");
     const nome = input.value.trim();
 
     // Verifica se o nome não está vazio
@@ -45,7 +45,7 @@ function sortearAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigos.length);
     const amigoSorteado = amigos[indiceAleatorio];
 
-    document.getElementById("resultadoSorteio").innerHTML = `Amigo sorteado: ${amigoSorteado}`;
+    document.getElementById("resultado").innerHTML = `<strong>Amigo sorteado:</strong> ${amigoSorteado}`;
 }
 
 // Adiciona eventos de escuta para os botões
