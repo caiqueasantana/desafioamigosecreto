@@ -34,5 +34,5 @@ Este é um projeto simples de gerenciamento de amigos em JavaScript, onde os usu
 - 🎨 Criar um design mais amigável com CSS
 
 ## ✍️ Autor
-- [Caíque Santana]
+- Caíque Santana
 
